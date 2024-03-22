@@ -55,10 +55,11 @@ let container1 = document.getElementById('container')
 container1.style.backgroundColor = 'yellow';
 
 let children = document.createElement('p');
-children.innerText = 'DOM Child'
+children.setAttribute('class', 'dom-child');
+children.innerText = 'DOM Child';
+children.style.backgroundColor = 'red';
 
 container1.appendChild(children);
-console.log("THIS IS THE CHILD", children.value)
 
 // let liChildren = document.querySelectorAll('.review-li');
 // for(let i = 0; i < liChildren.length; i++){
